@@ -17,6 +17,14 @@ public extension SPMediator {
         }
         return nil
     }
+   
+    @objc func SPUserCenterUI_developerViewController() -> UIViewController? {
+        if let controller = self.performTarget_SPUserCenterUI(action: "developerViewController") {
+            return controller
+        }
+        return nil
+    }
+    
 
     
 }
